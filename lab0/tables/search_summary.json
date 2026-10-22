@@ -1,0 +1,15 @@
+{
+  "trial_states": {
+    "COMPLETE": 26,
+    "PRUNED": 14,
+    "FAIL": 0
+  },
+  "planned_epochs": 1200,
+  "completed_epochs": 866,
+  "pruner_saved_epochs": 334,
+  "recorded_seconds": 167.48213980020955,
+  "pruner_saved_seconds_estimate": 43.32907197528401,
+  "time_estimate_method": "Невыполненные эпохи PRUNED умножены на среднее время сохранённых эпох соответствующей попытки",
+  "best_trial": 18,
+  "best_val_acc": 0.9777777777777777
+}

@@ -1,0 +1,22 @@
+{
+  "delta_val_pp": {
+    "min": 0.8333333333333304,
+    "median": 2.2222222222222254,
+    "max": 2.500000000000002
+  },
+  "delta_test_pp": {
+    "min": 1.3888888888888888,
+    "median": 1.9444444444444444,
+    "max": 3.0555555555555554
+  },
+  "baseline_spread_pp": 0.8333333333333334,
+  "fixed_test_total": 57,
+  "spoiled_test_total": 20,
+  "test_evaluations": 1800,
+  "unique_test_images": 360,
+  "search_best_val_acc": 0.9777777777777777,
+  "new_seeds_best_val_mean": 0.9738888888888889,
+  "new_seeds_best_test_mean": 0.9683333333333334,
+  "verdict": "Все пять улучшений превышают разброс базовой серии.",
+  "limitation": "Использован описательный критерий методички, а не проверка статистической значимости"
+}
