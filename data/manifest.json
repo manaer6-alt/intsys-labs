@@ -1,0 +1,42 @@
+{
+  "datasets": {
+    "digits": {
+      "source": "sklearn.datasets.load_digits",
+      "source_url": "https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_digits.html",
+      "source_version": "1.9.1",
+      "original_records": 1797,
+      "selected_records": 1797,
+      "excluded_records": 0,
+      "exclusion_reason": null,
+      "selection_rule": "Используются все записи исходного набора",
+      "n_features": 64,
+      "classes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "split_seed": 0,
+      "split_rule": {
+        "stratified": true,
+        "test_size": 0.2,
+        "val_size_of_remainder": 0.25,
+        "random_state_both_calls": 0
+      },
+      "split_sizes": {
+        "train": 1077,
+        "val": 360,
+        "test": 360
+      },
+      "split_file": "data/split.json",
+      "split_sha256": "15784ba5a76de42db28c379ed560b6baed63df57c518616b592b9d6abd2378fa",
+      "preprocessing": "Деление признаков на 16 при обучении"
+    }
+  }
+}

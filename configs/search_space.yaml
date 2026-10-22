@@ -1,0 +1,9 @@
+# Пространство поиска по методичке.
+# log: true — выбор значения по логарифмической шкале.
+
+lr: {low: 0.0001, high: 0.1, log: true}
+n_layers: {low: 1, high: 3}
+hidden: {low: 32, high: 512, log: true}
+dropout: {low: 0.0, high: 0.5}
+weight_decay: {low: 0.000001, high: 0.01, log: true}
+batch_size: [32, 64, 128]

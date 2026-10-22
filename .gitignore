@@ -1,0 +1,11 @@
+﻿.venv/
+__pycache__/
+*.pyc
+runs/
+mlartifacts/
+mlruns/
+*.db
+*.db-wal
+*.db-shm
+.env
+~$*
