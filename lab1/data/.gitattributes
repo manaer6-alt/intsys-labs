@@ -1,0 +1,3 @@
+pride_and_prejudice.txt -text
+model_config.json -text
+manifest.json text eol=lf

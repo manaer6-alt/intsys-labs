@@ -1,0 +1,6 @@
+base_url: "http://127.0.0.1:8000/v1"
+model: "Qwen/Qwen3-4B-Instruct-2507"
+model_revision: "cdbee75f17c01a7cc42f958dc650907174af0554"
+temperature: 0
+top_p: 1
+seed: 0

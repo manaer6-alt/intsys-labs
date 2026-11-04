@@ -1,0 +1,12 @@
+{
+  "source_url": "https://www.gutenberg.org/cache/epub/1342/pg1342.txt",
+  "title": "Pride and Prejudice",
+  "author": "Jane Austen",
+  "book_file": "pride_and_prejudice.txt",
+  "book_bytes": 772386,
+  "book_sha256": "3f6bb9d6f78e0293b56acd4714dd68cb7d6d1d293402031ce9d5a216bcaf9d75",
+  "selection_rule": "Полный файл сохранён; для запросов берём текст между START/END Gutenberg",
+  "model": "Qwen/Qwen3-4B-Instruct-2507",
+  "model_revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+  "model_config_sha256": "5beea1a4a34c62782bfb2f911c606741a3bab8f92d80a118fa053c28af12e8ba"
+}
