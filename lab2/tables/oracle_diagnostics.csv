@@ -1,0 +1,61 @@
+﻿claim_id,gold_label,raw_label,label_only_correct,parse_status,parse_error,passed,returned_doc_id,returned_sentences,exact_minus_one
+171,CONTRADICT,CONTRADICT,True,invalid_answer,Нужна непустая ссылка только на переданные предложения,"[{""doc_id"": ""12670680"", ""sentences"": [1]}]",12670680,[0],True
+143,SUPPORT,SUPPORT,True,ok,,"[{""doc_id"": ""10582939"", ""sentences"": [12]}]",10582939,[12],False
+756,SUPPORT,SUPPORT,True,ok,,"[{""doc_id"": ""2831620"", ""sentences"": [0]}]",2831620,[0],False
+212,CONTRADICT,SUPPORT,False,invalid_answer,Нужна непустая ссылка только на переданные предложения,"[{""doc_id"": ""22038539"", ""sentences"": [1]}]",22038539,[0],True
+1132,SUPPORT,NOINFO,False,ok,,"[{""doc_id"": ""33499189"", ""sentences"": [3, 4]}]",,[],False
+636,SUPPORT,SUPPORT,True,invalid_answer,Нужна непустая ссылка только на переданные предложения,"[{""doc_id"": ""24294572"", ""sentences"": [4]}]",24294572,[3],True
+903,CONTRADICT,CONTRADICT,True,invalid_answer,Нужна непустая ссылка только на переданные предложения,"[{""doc_id"": ""10648422"", ""sentences"": [4]}]",10648422,[3],True
+793,CONTRADICT,CONTRADICT,True,ok,,"[{""doc_id"": ""8551160"", ""sentences"": [1]}]",8551160,[1],False
+1089,SUPPORT,SUPPORT,True,ok,,"[{""doc_id"": ""17628888"", ""sentences"": [7]}]",17628888,[7],False
+811,CONTRADICT,CONTRADICT,True,invalid_answer,Нужна непустая ссылка только на переданные предложения,"[{""doc_id"": ""19799455"", ""sentences"": [4]}]",19799455,[3],True
+1298,SUPPORT,SUPPORT,True,ok,,"[{""doc_id"": ""11718220"", ""sentences"": [11]}]",11718220,[11],False
+42,CONTRADICT,CONTRADICT,True,ok,,"[{""doc_id"": ""18174210"", ""sentences"": [1, 9]}]",18174210,[9],False
+569,SUPPORT,SUPPORT,True,invalid_answer,Нужна непустая ссылка только на переданные предложения,"[{""doc_id"": ""23460562"", ""sentences"": [4]}]",23460562,[3],True
+692,CONTRADICT,NOINFO,False,ok,,"[{""doc_id"": ""24088502"", ""sentences"": [8]}]",,[],False
+436,SUPPORT,SUPPORT,True,invalid_answer,Нужна непустая ссылка только на переданные предложения,"[{""doc_id"": ""14637235"", ""sentences"": [1]}]",14637235,[0],True
+1232,CONTRADICT,CONTRADICT,True,ok,,"[{""doc_id"": ""13905670"", ""sentences"": [3]}]",13905670,[3],False
+1110,CONTRADICT,CONTRADICT,True,ok,,"[{""doc_id"": ""13770184"", ""sentences"": [13]}]",13770184,[13],False
+1382,CONTRADICT,NOINFO,False,ok,,"[{""doc_id"": ""17755060"", ""sentences"": [3]}]",,[],False
+845,SUPPORT,SUPPORT,True,invalid_answer,Нужна непустая ссылка только на переданные предложения,"[{""doc_id"": ""17741440"", ""sentences"": [1]}]",17741440,[0],True
+185,CONTRADICT,CONTRADICT,True,invalid_answer,Нужна непустая ссылка только на переданные предложения,"[{""doc_id"": ""18340282"", ""sentences"": [2]}]",18340282,[1],True
+880,SUPPORT,NOINFO,False,ok,,"[{""doc_id"": ""8426046"", ""sentences"": [3]}]",,[],False
+56,SUPPORT,SUPPORT,True,invalid_answer,Нужна непустая ссылка только на переданные предложения,"[{""doc_id"": ""4709641"", ""sentences"": [1]}]",4709641,"[0, 1]",False
+873,CONTRADICT,CONTRADICT,True,ok,,"[{""doc_id"": ""1180972"", ""sentences"": [3, 4]}]",1180972,"[3, 4]",False
+1021,CONTRADICT,NOINFO,False,ok,,"[{""doc_id"": ""9433958"", ""sentences"": [3]}]",,[],False
+1274,SUPPORT,SUPPORT,True,ok,,"[{""doc_id"": ""4406819"", ""sentences"": [4, 5]}]",4406819,"[4, 5]",False
+1144,CONTRADICT,CONTRADICT,True,invalid_answer,Нужна непустая ссылка только на переданные предложения,"[{""doc_id"": ""10071552"", ""sentences"": [4]}]",10071552,[3],True
+239,SUPPORT,SUPPORT,True,ok,,"[{""doc_id"": ""14079881"", ""sentences"": [10]}]",14079881,[10],False
+386,SUPPORT,SUPPORT,True,ok,,"[{""doc_id"": ""16495649"", ""sentences"": [8]}]",16495649,[8],False
+513,CONTRADICT,CONTRADICT,True,ok,,"[{""doc_id"": ""13230773"", ""sentences"": [11]}]",13230773,[11],False
+1320,CONTRADICT,CONTRADICT,True,ok,,"[{""doc_id"": ""16284655"", ""sentences"": [4]}]",16284655,[4],False
+1385,SUPPORT,CONTRADICT,False,invalid_answer,Нужна непустая ссылка только на переданные предложения,"[{""doc_id"": ""306006"", ""sentences"": [4]}]",306006,[3],True
+971,SUPPORT,SUPPORT,True,ok,,"[{""doc_id"": ""27873158"", ""sentences"": [0]}]",27873158,[0],False
+1370,CONTRADICT,CONTRADICT,True,ok,,"[{""doc_id"": ""2425364"", ""sentences"": [10]}]",2425364,[10],False
+882,CONTRADICT,CONTRADICT,True,invalid_answer,Нужна непустая ссылка только на переданные предложения,"[{""doc_id"": ""14803797"", ""sentences"": [2]}]",14803797,[1],True
+70,SUPPORT,SUPPORT,True,ok,,"[{""doc_id"": ""4414547"", ""sentences"": [5]}]",4414547,[5],False
+1336,CONTRADICT,CONTRADICT,True,invalid_answer,Нужна непустая ссылка только на переданные предложения,"[{""doc_id"": ""27910499"", ""sentences"": [4]}]",27910499,[3],True
+904,SUPPORT,SUPPORT,True,invalid_answer,Нужна непустая ссылка только на переданные предложения,"[{""doc_id"": ""7370282"", ""sentences"": [6]}]",7370282,[5],True
+613,SUPPORT,SUPPORT,True,invalid_answer,Нужна непустая ссылка только на переданные предложения,"[{""doc_id"": ""9638032"", ""sentences"": [4]}]",9638032,[3],True
+1086,SUPPORT,SUPPORT,True,ok,,"[{""doc_id"": ""39281140"", ""sentences"": [6]}]",39281140,[6],False
+385,SUPPORT,SUPPORT,True,invalid_answer,Нужна непустая ссылка только на переданные предложения,"[{""doc_id"": ""9955779"", ""sentences"": [4]}]",9955779,[3],True
+1270,CONTRADICT,CONTRADICT,True,invalid_answer,Нужна непустая ссылка только на переданные предложения,"[{""doc_id"": ""13900610"", ""sentences"": [7]}]",13900610,[13],False
+1107,SUPPORT,SUPPORT,True,invalid_answer,Нужна непустая ссылка только на переданные предложения,"[{""doc_id"": ""20532591"", ""sentences"": [3]}]",20532591,[2],True
+922,CONTRADICT,CONTRADICT,True,ok,,"[{""doc_id"": ""17077004"", ""sentences"": [7]}]",17077004,[7],False
+183,CONTRADICT,SUPPORT,False,ok,,"[{""doc_id"": ""12827098"", ""sentences"": [3]}]",12827098,[3],False
+1121,SUPPORT,SUPPORT,True,ok,,"[{""doc_id"": ""4456756"", ""sentences"": [7]}]",4456756,[7],False
+598,CONTRADICT,CONTRADICT,True,ok,,"[{""doc_id"": ""25742130"", ""sentences"": [6]}]",25742130,[6],False
+314,SUPPORT,SUPPORT,True,ok,,"[{""doc_id"": ""4347374"", ""sentences"": [3, 5]}]",4347374,[5],False
+1029,CONTRADICT,CONTRADICT,True,ok,,"[{""doc_id"": ""11899391"", ""sentences"": [6]}]",11899391,[6],False
+216,CONTRADICT,CONTRADICT,True,invalid_answer,Нужна непустая ссылка только на переданные предложения,"[{""doc_id"": ""21366394"", ""sentences"": [4]}]",21366394,[3],True
+1137,CONTRADICT,NOINFO,False,ok,,"[{""doc_id"": ""33370"", ""sentences"": [6]}]",,[],False
+452,CONTRADICT,CONTRADICT,True,ok,,"[{""doc_id"": ""12804937"", ""sentences"": [0]}]",12804937,[0],False
+1130,CONTRADICT,CONTRADICT,True,invalid_answer,Нужна непустая ссылка только на переданные предложения,"[{""doc_id"": ""17997584"", ""sentences"": [3]}]",17997584,[2],True
+957,SUPPORT,SUPPORT,True,invalid_answer,Нужна непустая ссылка только на переданные предложения,"[{""doc_id"": ""123859"", ""sentences"": [2]}]",123859,[1],True
+578,CONTRADICT,CONTRADICT,True,invalid_answer,Нужна непустая ссылка только на переданные предложения,"[{""doc_id"": ""8764879"", ""sentences"": [5]}]",8764879,[4],True
+960,SUPPORT,SUPPORT,True,ok,,"[{""doc_id"": ""8780599"", ""sentences"": [6]}]",8780599,[6],False
+982,SUPPORT,NOINFO,False,ok,,"[{""doc_id"": ""2988714"", ""sentences"": [4]}]",,[],False
+521,SUPPORT,SUPPORT,True,ok,,"[{""doc_id"": ""34873974"", ""sentences"": [14]}]",34873974,[14],False
+130,SUPPORT,SUPPORT,True,invalid_answer,Нужна непустая ссылка только на переданные предложения,"[{""doc_id"": ""27768226"", ""sentences"": [2]}]",27768226,[1],True
+859,CONTRADICT,CONTRADICT,True,invalid_answer,Нужна непустая ссылка только на переданные предложения,"[{""doc_id"": ""1982286"", ""sentences"": [3]}]",1982286,[2],True
+805,SUPPORT,SUPPORT,True,invalid_answer,Нужна непустая ссылка только на переданные предложения,"[{""doc_id"": ""22180793"", ""sentences"": [4]}]",22180793,[3],True

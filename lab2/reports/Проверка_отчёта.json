@@ -1,0 +1,20 @@
+{
+  "pages": 6,
+  "toc_pages_verified": true,
+  "figures_in_report": 1,
+  "tables_in_report": 2,
+  "source_analysis_id": "77ade016c88840f5a7124d1623f4483c",
+  "source_archive_sha256": "9f46f6805c137bffa931ef51fe214c8f104b26362028783bded6f60ce10ece1e",
+  "docx_sha256": "8617f41f889bdac3c083aa3b805749c713f3e244048a0326a09acf9d1ecb11c4",
+  "pdf_sha256": "1332d6ffdb7032e3107a896920228cda8b52833a68b7d5ec43654cd9ef09c73e",
+  "pdf_exported_from_final_docx": true,
+  "new_model_calls": 0,
+  "same_prompt_k3_k5": 6,
+  "budget_lost_claim_ids": [
+    185,
+    513,
+    1121
+  ],
+  "all_six_final_pages_visually_checked": true,
+  "reference_document_unchanged": true
+}

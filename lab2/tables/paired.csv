@@ -1,0 +1,4 @@
+﻿before,after,n,fixed,spoiled,both_correct,both_wrong,delta_pp
+llm_only,rag_k3,90,37,4,33,16,36.666666666666664
+rag_k3,rag_k1,90,6,5,65,14,1.1111111111111112
+rag_k3,rag_k5,90,2,5,65,18,-3.3333333333333335
