@@ -9,3 +9,26 @@ mlruns/
 *.db-shm
 .env
 ~$*
+
+# Локальные архивы и распакованные материалы предыдущих работ.
+/lab0_artifacts_e06a9f33*
+/lab1_kaggle_source*
+/lab1/lab1_*.zip
+
+# Локальные результаты и журналы ЛР1.
+/lab1/analysis/
+/lab1/cache/
+/lab1/check/
+/lab1/console/
+/lab1/exp1/
+/lab1/exp2/
+/lab1/exp3/
+/lab1/local_mlartifacts/
+/lab1/provenance/
+/lab1/server_sessions/
+/lab1/current_server.json
+/lab1/latest_analysis.json
+/lab1/mlflow_imports.json
+/lab1/mlflow_local_imports.json
+/lab1/mlflow_local_runs.csv
+/lab1/mlflow_runs.csv
