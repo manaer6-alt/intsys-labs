@@ -32,3 +32,5 @@ mlruns/
 /lab1/mlflow_local_imports.json
 /lab1/mlflow_local_runs.csv
 /lab1/mlflow_runs.csv
+
+/lab2/lab2_final_*.zip*
