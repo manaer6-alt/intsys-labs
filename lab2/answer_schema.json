@@ -1,0 +1,28 @@
+{
+  "type": "json_schema",
+  "json_schema": {
+    "name": "verdict",
+    "strict": true,
+    "schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["label", "doc_id", "sentences"],
+      "properties": {
+        "label": {
+          "type": "string",
+          "enum": ["SUPPORT", "CONTRADICT", "NOINFO"]
+        },
+        "doc_id": {
+          "anyOf": [
+            {"type": "string"},
+            {"type": "null"}
+          ]
+        },
+        "sentences": {
+          "type": "array",
+          "items": {"type": "integer"}
+        }
+      }
+    }
+  }
+}

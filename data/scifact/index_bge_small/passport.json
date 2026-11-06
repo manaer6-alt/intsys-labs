@@ -1,0 +1,48 @@
+{
+  "config": {
+    "model": "BAAI/bge-small-en-v1.5",
+    "revision": "5c38ec7c405ec4b44b94cc5a9bb96e735b38267a",
+    "dimension": 384,
+    "max_length": 512,
+    "normalize_embeddings": true,
+    "query_prefix": "Represent this sentence for searching relevant passages: ",
+    "document_prefix": "",
+    "batch_size": 32,
+    "num_threads": 4,
+    "seed": 0,
+    "output_dir": "data/scifact/index_bge_small"
+  },
+  "versions": {
+    "numpy": "2.5.4",
+    "torch": "2.14.1+cpu",
+    "sentence-transformers": "6.2.0",
+    "transformers": "5.22.1",
+    "huggingface-hub": "2.4.0",
+    "python": "3.14.0"
+  },
+  "device": "cpu",
+  "dtype": "float32",
+  "corpus_sha256": "b8d6c89624cb2ed74dee8938effc4f5d8bd2086887880af8110d64be4ceade62",
+  "documents": 5183,
+  "shape": [
+    5183,
+    384
+  ],
+  "normalization": "L2",
+  "document_text": "document_prefix + title + newline + join(abstract, space)",
+  "truncated_documents": 455,
+  "truncated_fraction": 0.08778699594829249,
+  "token_lengths_include_special_tokens": true,
+  "same_text_similarity": 1.0000001192092896,
+  "query_document_similarity": 0.9468327164649963,
+  "files": {
+    "embeddings.npy": {
+      "path": "data/scifact/index_bge_small/embeddings.npy",
+      "sha256": "b8ae392335f6f09bcf64d3692eab5c48d2df3d8424dc16a442e500e68a35c65f"
+    },
+    "doc_ids.json": {
+      "path": "data/scifact/index_bge_small/doc_ids.json",
+      "sha256": "7753eefeb10f6ea8a63650d0f5240e16a1640f27df69f81cbeb2ea558d3108f3"
+    }
+  }
+}

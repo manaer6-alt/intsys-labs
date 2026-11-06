@@ -1,0 +1,5 @@
+﻿/data.tar.gz
+/corpus.jsonl
+/claims_train.jsonl
+/claims_dev.jsonl
+/index_bge_small/embeddings.npy
