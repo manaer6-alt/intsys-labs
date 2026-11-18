@@ -1,6 +1,6 @@
 {
   "model": "cross-encoder/ms-marco-MiniLM-L6-v2",
-  "revision": "233902d",
+  "revision": "233902d25c440f23af6f7d6e94d2946bac0bee0a",
   "device": "cpu",
   "threads": 4,
   "batch_size": 8,
