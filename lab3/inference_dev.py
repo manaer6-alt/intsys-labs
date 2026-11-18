@@ -22,10 +22,10 @@ FILES = ("tasks.jsonl", "warmups.jsonl", "generation_config.json", "answer_schem
 EXPECTED_META_SHA = "ff5b2a5d12eef732458829aee901a20383084b8f018c0c4d3448bd25658a24df"
 
 
-def load_inputs(path):
+def load_inputs(path, *, metadata_sha=EXPECTED_META_SHA, series=SERIES, claim_count=90):
     meta_path = path / "metadata.json"
-    if sha(meta_path.read_bytes()) != EXPECTED_META_SHA:
-        raise ValueError("Нужен пакет входов ЛР3 из подготовленного запуска 061da805")
+    if sha(meta_path.read_bytes()) != metadata_sha:
+        raise ValueError("Пакет входов ЛР3 не совпал с подготовленным запуском")
     meta = read_json(meta_path)
     for name in FILES:
         if sha((path / name).read_bytes()) != meta["files_sha256"][name]:
@@ -37,11 +37,11 @@ def load_inputs(path):
         raise ValueError("Схемы ответа ЛР2 и ЛР3 отличаются")
     tasks = read_lines(path / "tasks.jsonl")
     warmups = read_lines(path / "warmups.jsonl")
-    if Counter(t["series"] for t in tasks) != {name: 90 for name in SERIES}:
-        raise ValueError("Ожидалось по 90 заданий в каждой серии")
-    ids = [[t["claim_id"] for t in tasks if t["series"] == name] for name in SERIES]
-    if len(set(ids[0])) != 90 or ids[0] != ids[1]:
-        raise ValueError("Нужны те же 90 утверждений в том же порядке")
+    if Counter(t["series"] for t in tasks) != {name: claim_count for name in series}:
+        raise ValueError(f"Ожидалось по {claim_count} заданий в каждой серии")
+    ids = [[t["claim_id"] for t in tasks if t["series"] == name] for name in series]
+    if len(set(ids[0])) != claim_count or ids[0] != ids[1]:
+        raise ValueError("Обеим сериям нужны одинаковые утверждения в том же порядке")
     if any(t["mode"] != "rag" or t["k"] != 3 for t in tasks):
         raise ValueError("Основные запросы должны быть RAG с k=3")
     if len(warmups) != 2 or {t["mode"] for t in warmups} != {"llm_only", "rag"}:
@@ -69,8 +69,8 @@ def check_tokens(out, tasks, config, server):
                 print(f"Проверка длины входов: {i}/{len(tasks)}", flush=True)
 
 
-def run(stage, root, server, commit, config, tasks, warmups):
-    signature = fingerprint({"inputs": EXPECTED_META_SHA, "commit": commit,
+def run(stage, root, server, commit, config, tasks, warmups, *, inputs_metadata_sha=EXPECTED_META_SHA):
+    signature = fingerprint({"inputs": inputs_metadata_sha, "commit": commit,
                              "profile": server["profile"], "defaults": DEFAULTS})
     approval = {"signature": signature, "session": server["session_id"]}
     selection_path = root / "selection.json"
@@ -90,7 +90,7 @@ def run(stage, root, server, commit, config, tasks, warmups):
         out = root / "runs" / run_id
         meta = {"run_id": run_id, "series": stage, "status": "running", "started_at": now(),
                 "signature": signature, "approval": approval, "execution_commit": commit,
-                "inputs_metadata_sha256": EXPECTED_META_SHA, "server_sessions": []}
+                "inputs_metadata_sha256": inputs_metadata_sha, "server_sessions": []}
         write_json(out / "metadata.json", meta)
         selection[stage] = run_id
         write_json(selection_path, selection)
@@ -152,7 +152,7 @@ def run(stage, root, server, commit, config, tasks, warmups):
     print(f"ЗАВЕРШЕНО: {stage}, run_id={run_id}", flush=True)
 
 
-def main():
+def main(*, series=SERIES, loader=load_inputs, inputs_metadata_sha=EXPECTED_META_SHA):
     import fcntl
     import signal
 
@@ -161,9 +161,9 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--inputs", type=Path, required=True)
     parser.add_argument("--root", type=Path, required=True)
-    parser.add_argument("--stage", choices=("check", *SERIES), required=True)
+    parser.add_argument("--stage", choices=("check", *series), required=True)
     args = parser.parse_args()
-    config, tasks, warmups = load_inputs(args.inputs)
+    config, tasks, warmups = loader(args.inputs)
     server = read_json(args.root / "current_server.json")
     validate_server(server, config)
     if not server["active"]:
@@ -171,7 +171,8 @@ def main():
     signal.signal(signal.SIGTERM, stop_on_signal)
     with (args.root / "inference.lock").open("a") as lock:
         fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
-        run(args.stage, args.root, server, git_commit(), config, tasks, warmups)
+        run(args.stage, args.root, server, git_commit(), config, tasks, warmups,
+            inputs_metadata_sha=inputs_metadata_sha)
 
 
 if __name__ == "__main__":
