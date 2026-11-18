@@ -1,0 +1,6 @@
+{
+  "dense_config": "configs/lab2_index.json",
+  "depth": 20,
+  "bm25": {"k1": 1.2, "b": 0.75},
+  "rrf_constant": 60
+}
