@@ -1,0 +1,35 @@
+{
+  "run_id": "8abf0dc9c8a14bb9b4de371360bd1f9b",
+  "commit": "87ce5beb5e794cb0b78aa071132561f8641340de",
+  "selection_commit": "82182e074ccdaa8661e0eda90eda490cff438f03",
+  "selection_sha256": "5de484e71c6975635a5b9863d37e1210012e8b67d8034bdc616840f6bcd86c52",
+  "split": "holdout",
+  "split_sha256": "b80ed1372bb5f7079ed240bd1449b07d3c445bc7dad0a853c2c85bf30fd36061",
+  "config_sha256": {
+    "configs/lab3_search.json": "c49f6ab06b099a13e3c9bbb2122818c6b51e970a3217aabf55b790500ab22f3f",
+    "configs/lab3_rerank.json": "14bb6d6ba0eb169932ebfb800515e203e06c90476abad21494fbced92c9ad5ca",
+    "configs/lab2.json": "570a735ae5f4e2d16705465fef980d19da5e5c040af48dada345b66dfbc49b54"
+  },
+  "baseline": "dense",
+  "selected_method": "rrf_ce",
+  "k": 3,
+  "model_revision_ce": "233902d25c440f23af6f7d6e94d2946bac0bee0a",
+  "source_dev_run": "061da805b89c4e50b14627a4c510ac7f",
+  "lab2_archive_sha256": "9f46f6805c137bffa931ef51fe214c8f104b26362028783bded6f60ce10ece1e",
+  "claims": 210,
+  "tasks": 420,
+  "qwen_calls": 0,
+  "versions": {
+    "torch": "2.14.1+cpu",
+    "transformers": "5.22.1",
+    "huggingface-hub": "2.4.0"
+  },
+  "files_sha256": {
+    "answer_schema.json": "9fce70db29ef5dd7e7d2dfaff09baa8ccb102c90852d58c24f346a4067461026",
+    "generation_config.json": "1aab2b4fea8026adf6bca8a9bb940d6f2348ac63b125d8e481f43adf27b4bdc0",
+    "selection.json": "5de484e71c6975635a5b9863d37e1210012e8b67d8034bdc616840f6bcd86c52",
+    "tasks.jsonl": "3db8577a1998205d29b40ed7afc19bce9e0b66bd3e0465a3c3a2c981a392883e",
+    "traces.jsonl": "e6d59abbe3b80db198c131a657ba02f9ab4900d235a33e37ba4c75c8da0fc956",
+    "warmups.jsonl": "1585c09af857d55bab836d6f57a104663ea6281ec6fcfcc2c61539f386cc91ed"
+  }
+}

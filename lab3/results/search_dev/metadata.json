@@ -1,0 +1,14 @@
+{
+  "commit": "f257d31f7ac52939d9b7170f576e3a7b6158c594",
+  "config_sha256": "c49f6ab06b099a13e3c9bbb2122818c6b51e970a3217aabf55b790500ab22f3f",
+  "split_sha256": "b80ed1372bb5f7079ed240bd1449b07d3c445bc7dad0a853c2c85bf30fd36061",
+  "forecast_sha256": "5cad0047798d1d528c3ea5c0c410f96dd908313bb0dd5a6349a0952991371c25",
+  "lab2_archive_sha256": "9f46f6805c137bffa931ef51fe214c8f104b26362028783bded6f60ce10ece1e",
+  "dense_top5_matched": 90,
+  "query_count": 90,
+  "qwen_calls": 0,
+  "searches.jsonl_sha256": "fbaa7cf413ca20d5577685cecee18eceb6a5359e9e20820b599646f1845cff48",
+  "retrieval.csv_sha256": "e7b5c01335e84bc242a2003996807180ac0bd0b2fd99fbba29d5afa10d6f70f7",
+  "complementarity.csv_sha256": "92e122b3e04c050fe2fc07220506ac194b3f155538299a2871cc24a1b2218843",
+  "timings.csv_sha256": "642f1959233cac6300d95ecec06941a5f1bebb8f0a48938b426527d8b3f7a856"
+}

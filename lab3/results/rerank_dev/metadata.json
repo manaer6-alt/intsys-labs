@@ -1,0 +1,37 @@
+{
+  "run_id": "061da805b89c4e50b14627a4c510ac7f",
+  "commit": "ecc56ad36c1dda8649e7261c75b0b1e0f313b876",
+  "config": {
+    "model": "cross-encoder/ms-marco-MiniLM-L6-v2",
+    "revision": "233902d25c440f23af6f7d6e94d2946bac0bee0a",
+    "device": "cpu",
+    "threads": 4,
+    "batch_size": 8,
+    "max_length": 512
+  },
+  "model_revision": "233902d25c440f23af6f7d6e94d2946bac0bee0a",
+  "config_sha256": "14bb6d6ba0eb169932ebfb800515e203e06c90476abad21494fbced92c9ad5ca",
+  "lab2_archive_sha256": "9f46f6805c137bffa931ef51fe214c8f104b26362028783bded6f60ce10ece1e",
+  "split_sha256": "b80ed1372bb5f7079ed240bd1449b07d3c445bc7dad0a853c2c85bf30fd36061",
+  "source_search_run": "0b45d5f32c19453ba60198fa516658fd",
+  "source_searches_sha256": "fbaa7cf413ca20d5577685cecee18eceb6a5359e9e20820b599646f1845cff48",
+  "dense_source_run_id": "27618a42bff546328a20afb604276526",
+  "dense_prompts_matched": 90,
+  "pairs": 1800,
+  "tasks": 180,
+  "qwen_calls": 0,
+  "versions": {
+    "torch": "2.14.1+cpu",
+    "transformers": "5.22.1",
+    "huggingface-hub": "2.4.0"
+  },
+  "files_sha256": {
+    "answer_schema.json": "9fce70db29ef5dd7e7d2dfaff09baa8ccb102c90852d58c24f346a4067461026",
+    "generation_config.json": "1aab2b4fea8026adf6bca8a9bb940d6f2348ac63b125d8e481f43adf27b4bdc0",
+    "retrieval.csv": "a62c7d040465c99dbe9f18b791bfbc5300c1d607a28ce79bc0e1bbdf2d9c5bb5",
+    "tasks.jsonl": "b5b4aea13ee7882b9269b09907db5cf4a31f86d4dfef7f34ac59a63cb62f7303",
+    "timings.csv": "e17e39eb85a191b7a33860f2efb2f3c489abb221bf6a8810b44fdc714cb583d0",
+    "traces.jsonl": "3bc5f9eb395188ae6a63c0adb8d9da8b3696e04f1b16817359fae08e6316e7cf",
+    "warmups.jsonl": "1585c09af857d55bab836d6f57a104663ea6281ec6fcfcc2c61539f386cc91ed"
+  }
+}

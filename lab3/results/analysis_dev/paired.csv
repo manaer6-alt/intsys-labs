@@ -1,0 +1,4 @@
+﻿from_method,to_method,fixed,spoiled,net,accuracy_delta_pp,coverage_added,coverage_lost
+dense,rrf,4,9,-5,-5.555555555555555,4,3
+dense,rrf_ce,3,4,-1,-1.1111111111111112,5,4
+rrf,rrf_ce,9,5,4,4.444444444444445,4,4

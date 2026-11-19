@@ -1,0 +1,129 @@
+{
+  "archive_sha256": "ff9d26dbfb08922f7fe46d24a1129ffa601400f3612e72287837cde00aaeeee4",
+  "sidecar_verified": true,
+  "preparation_run": "8abf0dc9c8a14bb9b4de371360bd1f9b",
+  "split_sha256": "b80ed1372bb5f7079ed240bd1449b07d3c445bc7dad0a853c2c85bf30fd36061",
+  "selection_commit": "82182e074ccdaa8661e0eda90eda490cff438f03",
+  "execution_commit": "267d65ede9ad6e8fc25c5b492bb5df74ec2f9f30",
+  "model": "Qwen/Qwen3-4B-Instruct-2507",
+  "model_revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+  "gpu": "uuid, name, memory.total [MiB], driver_version\nGPU-40b0dd7f-85e2-081a-0d4a-f4eef98d12db, Tesla T4, 15360 MiB, 580.178.04\n",
+  "source_runs": {
+    "dense": "ec6ba708219e40899af66ffe6fc41cd5",
+    "rrf_ce": "54e2088c0daa4d9f94d8a050f9f12928"
+  },
+  "series": {
+    "dense": {
+      "n": 210,
+      "accuracy": 0.6476190476190476,
+      "class_counts": {
+        "SUPPORT": 94,
+        "CONTRADICT": 34,
+        "NOINFO": 82
+      },
+      "recall_by_class": {
+        "SUPPORT": 0.8191489361702128,
+        "CONTRADICT": 0.6470588235294118,
+        "NOINFO": 0.45121951219512196
+      },
+      "reference_accuracy": 0.625,
+      "reference_accuracy_n": 128,
+      "evidence_coverage": 0.8984375,
+      "evidence_coverage_n": 128,
+      "hit_at_k": 0.8984375,
+      "hit_at_k_n": 128,
+      "recall_at_k": 0.890625,
+      "recall_at_k_n": 128,
+      "mrr_at_k": 0.8606770833333334,
+      "mrr_at_k_n": 128,
+      "correct": 136,
+      "references_correct": 80,
+      "evidence_present": 115,
+      "parse_failed": 2,
+      "call_failed": 0,
+      "generation_median_s": 2.6521337895000556,
+      "generation_total_s": 590.1235995499992,
+      "search_median_s": 0.02074305000132881,
+      "search_plus_generation_median_s": 2.6770992190125753
+    },
+    "rrf_ce": {
+      "n": 210,
+      "accuracy": 0.6476190476190476,
+      "class_counts": {
+        "SUPPORT": 94,
+        "CONTRADICT": 34,
+        "NOINFO": 82
+      },
+      "recall_by_class": {
+        "SUPPORT": 0.8723404255319149,
+        "CONTRADICT": 0.5588235294117647,
+        "NOINFO": 0.4268292682926829
+      },
+      "reference_accuracy": 0.65625,
+      "reference_accuracy_n": 128,
+      "evidence_coverage": 0.953125,
+      "evidence_coverage_n": 128,
+      "hit_at_k": 0.953125,
+      "hit_at_k_n": 128,
+      "recall_at_k": 0.9303385416666666,
+      "recall_at_k_n": 128,
+      "mrr_at_k": 0.8684895833333334,
+      "mrr_at_k_n": 128,
+      "correct": 136,
+      "references_correct": 84,
+      "evidence_present": 122,
+      "parse_failed": 0,
+      "call_failed": 0,
+      "generation_median_s": 2.7158742589999747,
+      "generation_total_s": 600.8842574730013,
+      "search_median_s": 1.151740150002297,
+      "search_plus_generation_median_s": 3.9283469605221626
+    }
+  },
+  "retrieval": [
+    {
+      "method": "dense",
+      "k": 3,
+      "n": 128,
+      "hit": 0.8984375,
+      "recall": 0.890625,
+      "mrr": 0.8606770833333334
+    },
+    {
+      "method": "dense",
+      "k": 20,
+      "n": 128,
+      "hit": 0.984375,
+      "recall": 0.984375,
+      "mrr": 0.8737289186507936
+    },
+    {
+      "method": "rrf_ce",
+      "k": 3,
+      "n": 128,
+      "hit": 0.953125,
+      "recall": 0.9303385416666666,
+      "mrr": 0.8684895833333334
+    },
+    {
+      "method": "rrf_ce",
+      "k": 20,
+      "n": 128,
+      "hit": 1,
+      "recall": 0.99609375,
+      "mrr": 0.8758342352092352
+    }
+  ],
+  "paired": [
+    {
+      "from_method": "dense",
+      "to_method": "rrf_ce",
+      "fixed": 10,
+      "spoiled": 10,
+      "net": 0,
+      "accuracy_delta_pp": 0.0,
+      "coverage_added": 9,
+      "coverage_lost": 2
+    }
+  ]
+}

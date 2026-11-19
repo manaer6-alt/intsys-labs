@@ -1,0 +1,143 @@
+{
+  "archive_sha256": "f00b68307fd4dd32763111dfde045cd8ac155862a369db25b31f0fa6a6200a6e",
+  "sidecar_verified": false,
+  "preparation_run": "061da805b89c4e50b14627a4c510ac7f",
+  "split_sha256": "b80ed1372bb5f7079ed240bd1449b07d3c445bc7dad0a853c2c85bf30fd36061",
+  "execution_commit": "4c2f455de60b109914abe5ba78ee84e6522cf478",
+  "source_runs": {
+    "dense": "27618a42bff546328a20afb604276526",
+    "rrf": "ba68429029ac4c8aa9f13b75722679f5",
+    "rrf_ce": "5dc11165d8fc4d6d9268416df411d268"
+  },
+  "model": "Qwen/Qwen3-4B-Instruct-2507",
+  "model_revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+  "gpu": "uuid, name, memory.total [MiB], driver_version\nGPU-ae507e92-66a6-0abe-a907-0a1d24a216d8, Tesla T4, 15360 MiB, 580.178.04\n",
+  "dense_gpu": "uuid, name, memory.total [MiB], driver_version\nGPU-e57dc3ea-6bab-3315-628d-79732fe12cbf, Tesla T4, 15360 MiB, 580.178.04\n",
+  "series": {
+    "dense": {
+      "n": 90,
+      "accuracy": 0.7777777777777778,
+      "class_counts": {
+        "SUPPORT": 30,
+        "CONTRADICT": 30,
+        "NOINFO": 30
+      },
+      "recall_by_class": {
+        "SUPPORT": 0.8333333333333334,
+        "CONTRADICT": 0.8666666666666667,
+        "NOINFO": 0.6333333333333333
+      },
+      "reference_accuracy": 0.65,
+      "reference_accuracy_n": 60,
+      "evidence_coverage": 0.85,
+      "evidence_coverage_n": 60,
+      "hit_at_k": 0.85,
+      "hit_at_k_n": 60,
+      "recall_at_k": 0.8144444444444444,
+      "recall_at_k_n": 60,
+      "mrr_at_k": 0.7527777777777778,
+      "mrr_at_k_n": 60,
+      "correct": 70,
+      "references_correct": 39,
+      "evidence_present": 51,
+      "parse_failed": 0,
+      "call_failed": 0,
+      "generation_median_s": 2.5696112109999945,
+      "generation_total_s": 245.70136688000025
+    },
+    "rrf": {
+      "n": 90,
+      "accuracy": 0.7222222222222222,
+      "class_counts": {
+        "SUPPORT": 30,
+        "CONTRADICT": 30,
+        "NOINFO": 30
+      },
+      "recall_by_class": {
+        "SUPPORT": 0.8666666666666667,
+        "CONTRADICT": 0.8333333333333334,
+        "NOINFO": 0.4666666666666667
+      },
+      "reference_accuracy": 0.65,
+      "reference_accuracy_n": 60,
+      "evidence_coverage": 0.8666666666666667,
+      "evidence_coverage_n": 60,
+      "hit_at_k": 0.8666666666666667,
+      "hit_at_k_n": 60,
+      "recall_at_k": 0.8269444444444445,
+      "recall_at_k_n": 60,
+      "mrr_at_k": 0.7472222222222222,
+      "mrr_at_k_n": 60,
+      "correct": 65,
+      "references_correct": 39,
+      "evidence_present": 52,
+      "parse_failed": 0,
+      "call_failed": 0,
+      "generation_median_s": 2.924799749500039,
+      "generation_total_s": 271.44455246000086
+    },
+    "rrf_ce": {
+      "n": 90,
+      "accuracy": 0.7666666666666667,
+      "class_counts": {
+        "SUPPORT": 30,
+        "CONTRADICT": 30,
+        "NOINFO": 30
+      },
+      "recall_by_class": {
+        "SUPPORT": 0.7333333333333333,
+        "CONTRADICT": 0.9,
+        "NOINFO": 0.6666666666666666
+      },
+      "reference_accuracy": 0.6166666666666667,
+      "reference_accuracy_n": 60,
+      "evidence_coverage": 0.8666666666666667,
+      "evidence_coverage_n": 60,
+      "hit_at_k": 0.8666666666666667,
+      "hit_at_k_n": 60,
+      "recall_at_k": 0.8444444444444444,
+      "recall_at_k_n": 60,
+      "mrr_at_k": 0.7972222222222223,
+      "mrr_at_k_n": 60,
+      "correct": 69,
+      "references_correct": 37,
+      "evidence_present": 52,
+      "parse_failed": 1,
+      "call_failed": 0,
+      "generation_median_s": 3.017849536000085,
+      "generation_total_s": 276.3771190739999
+    }
+  },
+  "paired": [
+    {
+      "from_method": "dense",
+      "to_method": "rrf",
+      "fixed": 4,
+      "spoiled": 9,
+      "net": -5,
+      "accuracy_delta_pp": -5.555555555555555,
+      "coverage_added": 4,
+      "coverage_lost": 3
+    },
+    {
+      "from_method": "dense",
+      "to_method": "rrf_ce",
+      "fixed": 3,
+      "spoiled": 4,
+      "net": -1,
+      "accuracy_delta_pp": -1.1111111111111112,
+      "coverage_added": 5,
+      "coverage_lost": 4
+    },
+    {
+      "from_method": "rrf",
+      "to_method": "rrf_ce",
+      "fixed": 9,
+      "spoiled": 5,
+      "net": 4,
+      "accuracy_delta_pp": 4.444444444444445,
+      "coverage_added": 4,
+      "coverage_lost": 4
+    }
+  ]
+}
