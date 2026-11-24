@@ -1,0 +1,13 @@
+{
+  "source": "AgentDojo",
+  "package_version": "0.1.35",
+  "benchmark_version": "v1.2.2",
+  "suite": "workspace",
+  "task_count": 40,
+  "debug_count": 10,
+  "final_count": 30,
+  "split_rule": "debug: numeric task ID divisible by 4; final: remaining tasks",
+  "task_ids_sha256": "2b92495c7fd1b497c21f269c3a2f3cf0c4e5304e738f271ec510f000ab40fa1a",
+  "split_path": "data/agentdojo/split.json",
+  "split_sha256": "17e5dc4818f1fb9723106ad54ee413a28844eef0e4301d8a45e18f998c1d9f89"
+}

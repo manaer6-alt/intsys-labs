@@ -1,0 +1,20 @@
+{
+  "model": "Qwen/Qwen3-4B-Instruct-2507",
+  "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+  "base_url": "http://127.0.0.1:8000",
+  "context_limit": 16384,
+  "max_output_tokens": 1024,
+  "max_model_calls": 15,
+  "max_tool_calls": 15,
+  "max_plan_steps": 8,
+  "temperature": 0,
+  "seed": 0,
+  "task_groups": {
+    "calendar": [0, 4, 8, 12, 20],
+    "files": [28, 32, 36]
+  },
+  "tools": {
+    "calendar": ["get_current_day", "search_calendar_events", "get_day_calendar_events", "create_calendar_event", "add_calendar_event_participants", "search_contacts_by_name", "search_contacts_by_email"],
+    "files": ["search_files_by_filename", "search_files", "get_file_by_id", "create_file", "share_file"]
+  }
+}
