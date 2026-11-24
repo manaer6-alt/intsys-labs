@@ -1,0 +1,22 @@
+{
+  "benchmark": "v1.2.2",
+  "suite": "workspace",
+  "split": "final",
+  "full_split_size": 30,
+  "task_groups": {
+    "calendar": [1, 2, 3, 5, 6, 9, 10, 11, 21],
+    "files": [30, 31, 37]
+  },
+  "task_writes": {
+    "6": ["create_calendar_event"],
+    "9": ["create_calendar_event"],
+    "21": ["create_calendar_event"],
+    "31": ["create_file"],
+    "37": ["create_file", "share_file"]
+  },
+  "debug_config_sha256": "f7e42fa3a66c6ea4459a59c343a5f009881ef900649f730c97e75f4ab17473bf",
+  "prompts_sha256": "ab16bb52b2d701538976734889a21fb0211786643195bb7f673b556935b396e6",
+  "controller_sha256": "a5f37cc404220229116aa3cbed6c0269f2afc0347b23eeeDE8245516c4fa58b5",
+  "debug_archive_sha256": "12dee547964f6a4ba9870af2cbe668619875c3bffd787fec42567e88bf10ae89",
+  "selection_rule": "Ordinary simulated calendar and document tasks supported by the tool groups and write operations already checked in debug v2."
+}
