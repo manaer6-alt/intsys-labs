@@ -65,7 +65,8 @@ class Agent(BasePipelineElement):
     def __init__(self, mode, task_number, client=request_model):
         self.mode, self.task_number, self.client = mode, task_number, client
         group = next(name for name, ids in CONFIG["task_groups"].items() if task_number in ids)
-        self.allowed = set(CONFIG["tools"][group])
+        reads = set(CONFIG["tools"][group]) - set(CONFIG["write_tools"])
+        self.allowed = reads | set(CONFIG["task_writes"].get(str(task_number), []))
         self.model_trace = []
         self.tool_trace = []
         self.reason = "completed"
