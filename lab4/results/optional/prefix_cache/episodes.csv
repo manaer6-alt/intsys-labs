@@ -1,0 +1,17 @@
+task_id,mode,utility,model_calls,tool_calls,input_tokens,output_tokens,seconds,tool_errors,truncated_calls,result_chars,sent_chars,stop_reason
+user_task_0,react,True,2,1,1902,92,4.8771414839998215,0,0,463,463,completed
+user_task_0,plan_then_execute,True,3,1,3262,134,8.287569309000219,0,0,463,463,completed
+user_task_4,plan_then_execute,False,5,3,10624,438,33.00679099700005,1,0,2133,2133,completed
+user_task_4,react,False,3,2,4397,297,15.082519333999926,0,0,1056,1056,completed
+user_task_8,react,True,3,2,3718,156,7.83865303399989,0,0,831,831,completed
+user_task_8,plan_then_execute,True,4,2,5827,232,14.58167109100009,0,0,831,831,completed
+user_task_12,plan_then_execute,True,6,4,11411,453,32.128636372000074,1,0,1013,1013,completed
+user_task_12,react,True,4,3,5882,369,17.366691085999946,1,0,676,676,completed
+user_task_20,react,False,2,1,2806,100,5.150403996000023,0,0,699,699,completed
+user_task_20,plan_then_execute,False,4,2,6507,285,17.976223757999833,0,0,288,288,completed
+user_task_28,plan_then_execute,True,3,1,2537,84,4.944123367999964,0,0,1356,1356,completed
+user_task_28,react,True,2,1,1545,58,3.115505965000011,0,0,1356,1356,completed
+user_task_32,react,False,3,2,3273,138,6.840341382000133,0,0,711,711,completed
+user_task_32,plan_then_execute,False,5,3,6750,276,17.122111572999984,0,0,747,747,completed
+user_task_36,plan_then_execute,False,3,1,2655,95,5.223589841000148,0,0,2,2,completed
+user_task_36,react,False,3,2,2316,88,3.985524850999809,1,0,105,105,completed

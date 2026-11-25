@@ -1,0 +1,633 @@
+{
+  "debug_v1": {
+    "source_sha256": "e8879e0bf957c3dceab361009396ac24a48dda12129983bf190e93a85255a0ea",
+    "task_count": 8,
+    "task_ids": [
+      0,
+      4,
+      8,
+      12,
+      20,
+      28,
+      32,
+      36
+    ],
+    "methods": {
+      "react": {
+        "episodes": 8,
+        "success": 4,
+        "success_rate": 0.5,
+        "model_calls": {
+          "median": 2.5,
+          "min": 2,
+          "max": 5
+        },
+        "tool_calls": {
+          "median": 1.5,
+          "min": 1,
+          "max": 4
+        },
+        "input_tokens": {
+          "median": 3156.0,
+          "min": 1753,
+          "max": 9522
+        },
+        "output_tokens": {
+          "median": 129.0,
+          "min": 82,
+          "max": 631
+        },
+        "seconds": {
+          "median": 9.769995814499907,
+          "min": 4.925561088999984,
+          "max": 41.53417855099997
+        },
+        "successful": {
+          "episodes": 4,
+          "success": 4,
+          "success_rate": 1.0,
+          "model_calls": {
+            "median": 2.5,
+            "min": 2,
+            "max": 4
+          },
+          "tool_calls": {
+            "median": 1.5,
+            "min": 1,
+            "max": 3
+          },
+          "input_tokens": {
+            "median": 3685.0,
+            "min": 2059,
+            "max": 6286
+          },
+          "output_tokens": {
+            "median": 129.0,
+            "min": 89,
+            "max": 366
+          },
+          "seconds": {
+            "median": 9.361292022500038,
+            "min": 6.087029343999802,
+            "max": 23.178669372999593
+          }
+        },
+        "failed": {
+          "episodes": 4,
+          "success": 0,
+          "success_rate": 0.0,
+          "model_calls": {
+            "median": 2.5,
+            "min": 2,
+            "max": 5
+          },
+          "tool_calls": {
+            "median": 2.0,
+            "min": 1,
+            "max": 4
+          },
+          "input_tokens": {
+            "median": 3156.0,
+            "min": 1753,
+            "max": 9522
+          },
+          "output_tokens": {
+            "median": 181.5,
+            "min": 82,
+            "max": 631
+          },
+          "seconds": {
+            "median": 10.85645427449981,
+            "min": 4.925561088999984,
+            "max": 41.53417855099997
+          }
+        },
+        "episodes_with_tool_errors": 4
+      },
+      "plan_then_execute": {
+        "episodes": 8,
+        "success": 3,
+        "success_rate": 0.375,
+        "model_calls": {
+          "median": 10.0,
+          "min": 10,
+          "max": 10
+        },
+        "tool_calls": {
+          "median": 6.0,
+          "min": 3,
+          "max": 8
+        },
+        "input_tokens": {
+          "median": 23684.0,
+          "min": 16610,
+          "max": 27651
+        },
+        "output_tokens": {
+          "median": 876.5,
+          "min": 570,
+          "max": 943
+        },
+        "seconds": {
+          "median": 71.31396713649974,
+          "min": 58.73158952299991,
+          "max": 89.33097151099992
+        },
+        "successful": {
+          "episodes": 3,
+          "success": 3,
+          "success_rate": 1.0,
+          "model_calls": {
+            "median": 10,
+            "min": 10,
+            "max": 10
+          },
+          "tool_calls": {
+            "median": 6,
+            "min": 6,
+            "max": 7
+          },
+          "input_tokens": {
+            "median": 23075,
+            "min": 21020,
+            "max": 25556
+          },
+          "output_tokens": {
+            "median": 804,
+            "min": 785,
+            "max": 943
+          },
+          "seconds": {
+            "median": 69.69128184099964,
+            "min": 65.08529024899963,
+            "max": 83.48166801199977
+          }
+        },
+        "failed": {
+          "episodes": 5,
+          "success": 0,
+          "success_rate": 0.0,
+          "model_calls": {
+            "median": 10,
+            "min": 10,
+            "max": 10
+          },
+          "tool_calls": {
+            "median": 6,
+            "min": 3,
+            "max": 8
+          },
+          "input_tokens": {
+            "median": 23984,
+            "min": 16610,
+            "max": 27651
+          },
+          "output_tokens": {
+            "median": 896,
+            "min": 570,
+            "max": 938
+          },
+          "seconds": {
+            "median": 72.93665243199985,
+            "min": 58.73158952299991,
+            "max": 89.33097151099992
+          }
+        },
+        "episodes_with_tool_errors": 6,
+        "plan_length": {
+          "median": 8.0,
+          "min": 8,
+          "max": 8
+        }
+      }
+    },
+    "pairs": {
+      "both": 2,
+      "react_only": 2,
+      "plan_only": 1,
+      "neither": 3
+    }
+  },
+  "debug_v2": {
+    "source_sha256": "12dee547964f6a4ba9870af2cbe668619875c3bffd787fec42567e88bf10ae89",
+    "task_count": 8,
+    "task_ids": [
+      0,
+      4,
+      8,
+      12,
+      20,
+      28,
+      32,
+      36
+    ],
+    "methods": {
+      "react": {
+        "episodes": 8,
+        "success": 4,
+        "success_rate": 0.5,
+        "model_calls": {
+          "median": 3.0,
+          "min": 2,
+          "max": 4
+        },
+        "tool_calls": {
+          "median": 2.0,
+          "min": 1,
+          "max": 3
+        },
+        "input_tokens": {
+          "median": 3039.5,
+          "min": 1545,
+          "max": 5882
+        },
+        "output_tokens": {
+          "median": 119.0,
+          "min": 58,
+          "max": 369
+        },
+        "seconds": {
+          "median": 8.011964070499971,
+          "min": 3.694439027000044,
+          "max": 22.549762373999783
+        },
+        "successful": {
+          "episodes": 4,
+          "success": 4,
+          "success_rate": 1.0,
+          "model_calls": {
+            "median": 2.5,
+            "min": 2,
+            "max": 4
+          },
+          "tool_calls": {
+            "median": 1.5,
+            "min": 1,
+            "max": 3
+          },
+          "input_tokens": {
+            "median": 2810.0,
+            "min": 1545,
+            "max": 5882
+          },
+          "output_tokens": {
+            "median": 124.0,
+            "min": 58,
+            "max": 369
+          },
+          "seconds": {
+            "median": 7.994875276999892,
+            "min": 3.694439027000044,
+            "max": 22.549762373999783
+          }
+        },
+        "failed": {
+          "episodes": 4,
+          "success": 0,
+          "success_rate": 0.0,
+          "model_calls": {
+            "median": 3.0,
+            "min": 2,
+            "max": 3
+          },
+          "tool_calls": {
+            "median": 2.0,
+            "min": 1,
+            "max": 2
+          },
+          "input_tokens": {
+            "median": 3039.5,
+            "min": 2316,
+            "max": 4397
+          },
+          "output_tokens": {
+            "median": 119.0,
+            "min": 88,
+            "max": 297
+          },
+          "seconds": {
+            "median": 8.011964070499971,
+            "min": 5.530966179000188,
+            "max": 18.09395208199976
+          }
+        },
+        "episodes_with_tool_errors": 2
+      },
+      "plan_then_execute": {
+        "episodes": 8,
+        "success": 4,
+        "success_rate": 0.5,
+        "model_calls": {
+          "median": 4.0,
+          "min": 3,
+          "max": 6
+        },
+        "tool_calls": {
+          "median": 2.0,
+          "min": 1,
+          "max": 4
+        },
+        "input_tokens": {
+          "median": 6167.0,
+          "min": 2537,
+          "max": 11411
+        },
+        "output_tokens": {
+          "median": 252.5,
+          "min": 84,
+          "max": 453
+        },
+        "seconds": {
+          "median": 17.45480399500002,
+          "min": 5.673844465000002,
+          "max": 35.57595295500005
+        },
+        "successful": {
+          "episodes": 4,
+          "success": 4,
+          "success_rate": 1.0,
+          "model_calls": {
+            "median": 3.5,
+            "min": 3,
+            "max": 6
+          },
+          "tool_calls": {
+            "median": 1.5,
+            "min": 1,
+            "max": 4
+          },
+          "input_tokens": {
+            "median": 4544.5,
+            "min": 2537,
+            "max": 11411
+          },
+          "output_tokens": {
+            "median": 183.0,
+            "min": 84,
+            "max": 453
+          },
+          "seconds": {
+            "median": 12.341625704499847,
+            "min": 5.673844465000002,
+            "max": 34.71760730799997
+          }
+        },
+        "failed": {
+          "episodes": 4,
+          "success": 0,
+          "success_rate": 0.0,
+          "model_calls": {
+            "median": 4.5,
+            "min": 3,
+            "max": 5
+          },
+          "tool_calls": {
+            "median": 2.5,
+            "min": 1,
+            "max": 3
+          },
+          "input_tokens": {
+            "median": 6631.5,
+            "min": 2667,
+            "max": 10624
+          },
+          "output_tokens": {
+            "median": 284.5,
+            "min": 110,
+            "max": 438
+          },
+          "seconds": {
+            "median": 19.54139182600011,
+            "min": 6.985173585999746,
+            "max": 35.57595295500005
+          }
+        },
+        "episodes_with_tool_errors": 2,
+        "plan_length": {
+          "median": 2.0,
+          "min": 1,
+          "max": 4
+        }
+      }
+    },
+    "pairs": {
+      "both": 4,
+      "react_only": 0,
+      "plan_only": 0,
+      "neither": 4
+    }
+  },
+  "holdout_subset": {
+    "source_sha256": "1a37943854e5c2bf19a59cef32b837ed43ad296de2d7e1059c9a60e7775b68c3",
+    "task_count": 12,
+    "task_ids": [
+      1,
+      2,
+      3,
+      5,
+      6,
+      9,
+      10,
+      11,
+      21,
+      30,
+      31,
+      37
+    ],
+    "methods": {
+      "react": {
+        "episodes": 12,
+        "success": 5,
+        "success_rate": 0.4166666666666667,
+        "model_calls": {
+          "median": 3.0,
+          "min": 2,
+          "max": 4
+        },
+        "tool_calls": {
+          "median": 2.0,
+          "min": 1,
+          "max": 3
+        },
+        "input_tokens": {
+          "median": 3117.0,
+          "min": 1917,
+          "max": 4501
+        },
+        "output_tokens": {
+          "median": 104.0,
+          "min": 40,
+          "max": 264
+        },
+        "seconds": {
+          "median": 8.150090458499989,
+          "min": 3.479225463999967,
+          "max": 17.989956259999985
+        },
+        "successful": {
+          "episodes": 5,
+          "success": 5,
+          "success_rate": 1.0,
+          "model_calls": {
+            "median": 3,
+            "min": 2,
+            "max": 4
+          },
+          "tool_calls": {
+            "median": 2,
+            "min": 1,
+            "max": 3
+          },
+          "input_tokens": {
+            "median": 3029,
+            "min": 1917,
+            "max": 4361
+          },
+          "output_tokens": {
+            "median": 89,
+            "min": 56,
+            "max": 264
+          },
+          "seconds": {
+            "median": 7.23833420099993,
+            "min": 4.347331571999973,
+            "max": 15.084700165999948
+          }
+        },
+        "failed": {
+          "episodes": 7,
+          "success": 0,
+          "success_rate": 0.0,
+          "model_calls": {
+            "median": 3,
+            "min": 2,
+            "max": 4
+          },
+          "tool_calls": {
+            "median": 2,
+            "min": 1,
+            "max": 3
+          },
+          "input_tokens": {
+            "median": 4159,
+            "min": 2180,
+            "max": 4501
+          },
+          "output_tokens": {
+            "median": 110,
+            "min": 40,
+            "max": 257
+          },
+          "seconds": {
+            "median": 8.193762205999974,
+            "min": 3.479225463999967,
+            "max": 17.989956259999985
+          }
+        },
+        "episodes_with_tool_errors": 3
+      },
+      "plan_then_execute": {
+        "episodes": 12,
+        "success": 3,
+        "success_rate": 0.25,
+        "model_calls": {
+          "median": 3.5,
+          "min": 3,
+          "max": 6
+        },
+        "tool_calls": {
+          "median": 1.0,
+          "min": 1,
+          "max": 3
+        },
+        "input_tokens": {
+          "median": 4440.0,
+          "min": 2152,
+          "max": 9637
+        },
+        "output_tokens": {
+          "median": 181.5,
+          "min": 96,
+          "max": 411
+        },
+        "seconds": {
+          "median": 13.043571068000034,
+          "min": 7.019951751999997,
+          "max": 32.362510447999966
+        },
+        "successful": {
+          "episodes": 3,
+          "success": 3,
+          "success_rate": 1.0,
+          "model_calls": {
+            "median": 3,
+            "min": 3,
+            "max": 5
+          },
+          "tool_calls": {
+            "median": 1,
+            "min": 1,
+            "max": 3
+          },
+          "input_tokens": {
+            "median": 3447,
+            "min": 3263,
+            "max": 6697
+          },
+          "output_tokens": {
+            "median": 221,
+            "min": 108,
+            "max": 264
+          },
+          "seconds": {
+            "median": 12.909789609000029,
+            "min": 7.234121919000017,
+            "max": 17.91985077999999
+          }
+        },
+        "failed": {
+          "episodes": 9,
+          "success": 0,
+          "success_rate": 0.0,
+          "model_calls": {
+            "median": 4,
+            "min": 3,
+            "max": 6
+          },
+          "tool_calls": {
+            "median": 1,
+            "min": 1,
+            "max": 3
+          },
+          "input_tokens": {
+            "median": 4443,
+            "min": 2152,
+            "max": 9637
+          },
+          "output_tokens": {
+            "median": 176,
+            "min": 96,
+            "max": 411
+          },
+          "seconds": {
+            "median": 13.17735252700004,
+            "min": 7.019951751999997,
+            "max": 32.362510447999966
+          }
+        },
+        "episodes_with_tool_errors": 4,
+        "plan_length": {
+          "median": 1.5,
+          "min": 1,
+          "max": 4
+        }
+      }
+    },
+    "pairs": {
+      "both": 2,
+      "react_only": 3,
+      "plan_only": 1,
+      "neither": 6
+    }
+  }
+}

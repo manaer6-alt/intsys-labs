@@ -1,0 +1,48 @@
+{
+  "overall": {
+    "episodes": 16,
+    "success": 6,
+    "success_rate": 0.375,
+    "input_tokens_total": 75188,
+    "output_tokens_total": 3421,
+    "input_tokens_median": 3573.0,
+    "output_tokens_median": 161.0,
+    "seconds_total": 228.1860080900001,
+    "seconds_median": 10.16126306450002,
+    "truncated_calls": 5,
+    "chars_saved": 730
+  },
+  "by_mode": {
+    "react": {
+      "episodes": 8,
+      "success": 3,
+      "success_rate": 0.375,
+      "input_tokens_total": 25850,
+      "output_tokens_total": 1418,
+      "input_tokens_median": 3117.0,
+      "output_tokens_median": 128.0,
+      "seconds_total": 85.80894002399998,
+      "seconds_median": 8.49535578450002,
+      "truncated_calls": 2,
+      "chars_saved": 354
+    },
+    "plan_then_execute": {
+      "episodes": 8,
+      "success": 3,
+      "success_rate": 0.375,
+      "input_tokens_total": 49338,
+      "output_tokens_total": 2003,
+      "input_tokens_median": 6165.5,
+      "output_tokens_median": 254.0,
+      "seconds_total": 142.3770680660001,
+      "seconds_median": 17.262253204000046,
+      "truncated_calls": 3,
+      "chars_saved": 376
+    }
+  },
+  "cache": {
+    "queries_tokens": 0,
+    "hits_tokens": 0,
+    "hit_rate": null
+  }
+}

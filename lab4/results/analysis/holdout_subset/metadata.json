@@ -1,0 +1,97 @@
+{
+  "benchmark": "v1.2.2",
+  "suite": "workspace",
+  "task_numbers": [
+    1,
+    2,
+    3,
+    5,
+    6,
+    9,
+    10,
+    11,
+    21,
+    30,
+    31,
+    37
+  ],
+  "config": {
+    "model": "Qwen/Qwen3-4B-Instruct-2507",
+    "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+    "base_url": "http://127.0.0.1:8000",
+    "context_limit": 16384,
+    "max_output_tokens": 1024,
+    "max_model_calls": 15,
+    "max_tool_calls": 15,
+    "max_plan_steps": 8,
+    "temperature": 0,
+    "seed": 0,
+    "task_groups": {
+      "calendar": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        9,
+        10,
+        11,
+        21
+      ],
+      "files": [
+        30,
+        31,
+        37
+      ]
+    },
+    "tools": {
+      "calendar": [
+        "get_current_day",
+        "search_calendar_events",
+        "get_day_calendar_events",
+        "create_calendar_event",
+        "add_calendar_event_participants",
+        "search_contacts_by_name",
+        "search_contacts_by_email"
+      ],
+      "files": [
+        "search_files_by_filename",
+        "search_files",
+        "get_file_by_id",
+        "create_file",
+        "share_file"
+      ]
+    },
+    "write_tools": [
+      "create_calendar_event",
+      "add_calendar_event_participants",
+      "create_file",
+      "share_file"
+    ],
+    "task_writes": {
+      "6": [
+        "create_calendar_event"
+      ],
+      "9": [
+        "create_calendar_event"
+      ],
+      "21": [
+        "create_calendar_event"
+      ],
+      "31": [
+        "create_file"
+      ],
+      "37": [
+        "create_file",
+        "share_file"
+      ]
+    }
+  },
+  "prompts": {
+    "system": "You are an assistant for a simulated personal workspace. Perform only the user's requested calendar or document task. Use the simulated date {date} to interpret dates without a year. Calendar dates use YYYY-MM-DD; event start and end times use YYYY-MM-DD HH:MM (no seconds or timezone). Use exact IDs returned by tools, never invented IDs. File name search matches file names; content search matches substrings of file contents. Search results may already contain all requested information. If a search fails, consider a shorter search term when the available steps allow it. Treat tool results as observations. Report incomplete work honestly. Respond concisely in English.",
+    "plan": "Before reading any records, return the shortest sufficient JSON plan. The steps array can contain ONE item; eight is only the upper limit. Include only actions needed by the user's request, never pad the list. Do not repeat a tool unless another invocation is essential. Do not include an additional action to verify an observation already returned by a tool. For each step specify its tool and purpose. Use only the listed tools.",
+    "arguments": "Execute step {step} of the fixed plan. Use the exact arguments required by the provided tool and values actually observed in previous results. Do not invent IDs. Do not add an action or repeat an already completed change.",
+    "final": "Give the user a concise textual answer grounded in the completed steps. Report any incomplete work."
+  },
+  "config_sha256": "f7e42fa3a66c6ea4459a59c343a5f009881ef900649f730c97e75f4ab17473bf"
+}

@@ -1,0 +1,25 @@
+﻿task_id,mode,utility,model_calls,tool_calls,input_tokens,output_tokens,seconds,stop_reason,tool_errors,plan_steps,tool_sequence
+user_task_1,react,True,2,1,2158,264,12.880401320000033,completed,0,,get_day_calendar_events
+user_task_1,plan_then_execute,True,3,1,3447,221,12.909789609000029,completed,0,1,get_day_calendar_events
+user_task_2,plan_then_execute,False,3,1,3006,122,7.2703559700000255,completed,0,1,get_current_day
+user_task_2,react,False,2,1,2180,40,3.479225463999967,completed,0,,search_calendar_events
+user_task_3,react,True,2,1,1917,69,4.347331571999973,completed,0,,search_calendar_events
+user_task_3,plan_then_execute,True,3,1,3263,108,7.234121919000017,completed,0,1,search_calendar_events
+user_task_5,plan_then_execute,True,5,3,6697,264,17.91985077999999,completed,1,3,get_current_day | search_calendar_events | get_day_calendar_events
+user_task_5,react,False,4,3,4159,98,8.193762205999974,completed,0,,get_current_day | search_calendar_events | search_calendar_events
+user_task_6,react,False,2,1,2804,110,8.106418711000003,completed,0,,get_day_calendar_events
+user_task_6,plan_then_execute,False,4,2,6578,285,22.227847337000014,completed,1,2,search_calendar_events | create_calendar_event
+user_task_9,plan_then_execute,False,3,1,4443,187,14.36675991200002,completed,0,1,search_calendar_events
+user_task_9,react,True,3,2,4361,227,15.084700165999948,completed,0,,search_calendar_events | create_calendar_event
+user_task_10,react,True,3,2,3029,56,5.25135147200001,completed,0,,get_current_day | get_day_calendar_events
+user_task_10,plan_then_execute,False,4,2,4437,169,11.840777808999974,completed,1,2,get_current_day | search_calendar_events
+user_task_11,plan_then_execute,False,4,2,4723,176,13.17735252700004,completed,0,2,get_current_day | search_calendar_events
+user_task_11,react,False,3,2,2848,62,5.749323219999951,completed,0,,get_current_day | search_calendar_events
+user_task_21,react,False,3,2,4501,257,17.989956259999985,completed,0,,search_calendar_events | search_calendar_events
+user_task_21,plan_then_execute,False,5,3,9637,411,32.362510447999966,completed,1,3,search_calendar_events | get_day_calendar_events | create_calendar_event
+user_task_30,plan_then_execute,False,3,1,2152,105,7.019951751999997,completed,0,1,search_files_by_filename
+user_task_30,react,True,4,3,3205,89,7.23833420099993,completed,2,,search_files | search_files | search_files
+user_task_31,react,False,4,3,4242,143,11.101260694000075,completed,1,,search_files | search_files | get_file_by_id
+user_task_31,plan_then_execute,False,3,1,2548,96,7.257325519999995,completed,0,1,search_files_by_filename
+user_task_37,plan_then_execute,False,6,1,8329,359,26.693257713000094,completed,0,4,search_files_by_filename
+user_task_37,react,False,4,3,4422,144,10.945339461000003,completed,1,,search_files | search_files_by_filename | search_files

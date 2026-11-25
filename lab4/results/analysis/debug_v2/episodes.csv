@@ -1,0 +1,17 @@
+﻿task_id,mode,utility,model_calls,tool_calls,input_tokens,output_tokens,seconds,stop_reason,tool_errors,plan_steps,tool_sequence
+user_task_0,react,True,2,1,1902,92,5.59767721199978,completed,0,,search_calendar_events
+user_task_0,plan_then_execute,True,3,1,3262,134,8.477957642999627,completed,0,1,search_calendar_events
+user_task_4,plan_then_execute,False,5,3,10624,438,35.57595295500005,completed,1,3,search_calendar_events | get_day_calendar_events | create_calendar_event
+user_task_4,react,False,3,2,4397,297,18.09395208199976,completed,0,,get_current_day | get_day_calendar_events
+user_task_8,react,True,3,2,3718,156,10.392073342000003,completed,0,,search_calendar_events | add_calendar_event_participants
+user_task_8,plan_then_execute,True,4,2,5827,232,16.205293766000068,completed,0,2,search_calendar_events | add_calendar_event_participants
+user_task_12,plan_then_execute,True,6,4,11411,453,34.71760730799997,completed,1,4,get_current_day | search_calendar_events | get_day_calendar_events | create_calendar_event
+user_task_12,react,True,4,3,5882,369,22.549762373999783,completed,1,,search_calendar_events | search_calendar_events | create_calendar_event
+user_task_20,react,False,2,1,2806,100,7.115737445999912,completed,0,,get_day_calendar_events
+user_task_20,plan_then_execute,False,4,2,6507,296,20.378469428000244,completed,0,2,search_contacts_by_name | create_calendar_event
+user_task_28,plan_then_execute,True,3,1,2537,84,5.673844465000002,completed,0,1,search_files_by_filename
+user_task_28,react,True,2,1,1545,58,3.694439027000044,completed,0,,search_files_by_filename
+user_task_32,react,False,3,2,3273,138,8.90819069500003,completed,0,,create_file | share_file
+user_task_32,plan_then_execute,False,5,3,6756,273,18.704314223999972,completed,0,3,search_files_by_filename | create_file | share_file
+user_task_36,plan_then_execute,False,3,1,2667,110,6.985173585999746,completed,0,1,search_files_by_filename
+user_task_36,react,False,3,2,2316,88,5.530966179000188,completed,1,,search_files_by_filename | search_files

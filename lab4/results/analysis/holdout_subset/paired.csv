@@ -1,0 +1,13 @@
+﻿task_id,react,plan_then_execute,group
+user_task_1,True,True,both
+user_task_2,False,False,neither
+user_task_3,True,True,both
+user_task_5,False,True,plan_only
+user_task_6,False,False,neither
+user_task_9,True,False,react_only
+user_task_10,True,False,react_only
+user_task_11,False,False,neither
+user_task_21,False,False,neither
+user_task_30,True,False,react_only
+user_task_31,False,False,neither
+user_task_37,False,False,neither

@@ -1,0 +1,149 @@
+{
+  "archive_sha256": "f8e6055a0b2bab34a5a13fda31715be3ca1c7849670062922e33489dd5b2d310",
+  "conditions": {
+    "baseline": {
+      "overall": {
+        "episodes": 16,
+        "success": 8,
+        "success_rate": 0.5,
+        "input_tokens_total": 75564,
+        "output_tokens_total": 3321,
+        "input_tokens_median": 3573.0,
+        "output_tokens_median": 161.0,
+        "seconds_total": 222.1023616919997,
+        "seconds_median": 10.121828459499966,
+        "truncated_calls": 0,
+        "chars_saved": 0
+      },
+      "by_mode": {
+        "react": {
+          "episodes": 8,
+          "success": 4,
+          "success_rate": 0.5,
+          "input_tokens_total": 25994,
+          "output_tokens_total": 1326,
+          "input_tokens_median": 3117.0,
+          "output_tokens_median": 128.0,
+          "seconds_total": 80.9025519239998,
+          "seconds_median": 8.497081300499985,
+          "truncated_calls": 0,
+          "chars_saved": 0
+        },
+        "plan_then_execute": {
+          "episodes": 8,
+          "success": 4,
+          "success_rate": 0.5,
+          "input_tokens_total": 49570,
+          "output_tokens_total": 1995,
+          "input_tokens_median": 6165.5,
+          "output_tokens_median": 254.0,
+          "seconds_total": 141.1998097679999,
+          "seconds_median": 17.316738948000022,
+          "truncated_calls": 0,
+          "chars_saved": 0
+        }
+      },
+      "cache": {
+        "queries_tokens": 0,
+        "hits_tokens": 0,
+        "hit_rate": null
+      }
+    },
+    "truncate_1024": {
+      "overall": {
+        "episodes": 16,
+        "success": 6,
+        "success_rate": 0.375,
+        "input_tokens_total": 75188,
+        "output_tokens_total": 3421,
+        "input_tokens_median": 3573.0,
+        "output_tokens_median": 161.0,
+        "seconds_total": 228.1860080900001,
+        "seconds_median": 10.16126306450002,
+        "truncated_calls": 5,
+        "chars_saved": 730
+      },
+      "by_mode": {
+        "react": {
+          "episodes": 8,
+          "success": 3,
+          "success_rate": 0.375,
+          "input_tokens_total": 25850,
+          "output_tokens_total": 1418,
+          "input_tokens_median": 3117.0,
+          "output_tokens_median": 128.0,
+          "seconds_total": 85.80894002399998,
+          "seconds_median": 8.49535578450002,
+          "truncated_calls": 2,
+          "chars_saved": 354
+        },
+        "plan_then_execute": {
+          "episodes": 8,
+          "success": 3,
+          "success_rate": 0.375,
+          "input_tokens_total": 49338,
+          "output_tokens_total": 2003,
+          "input_tokens_median": 6165.5,
+          "output_tokens_median": 254.0,
+          "seconds_total": 142.3770680660001,
+          "seconds_median": 17.262253204000046,
+          "truncated_calls": 3,
+          "chars_saved": 376
+        }
+      },
+      "cache": {
+        "queries_tokens": 0,
+        "hits_tokens": 0,
+        "hit_rate": null
+      }
+    },
+    "prefix_cache": {
+      "overall": {
+        "episodes": 16,
+        "success": 8,
+        "success_rate": 0.5,
+        "input_tokens_total": 75412,
+        "output_tokens_total": 3295,
+        "input_tokens_median": 3495.5,
+        "output_tokens_median": 147.0,
+        "seconds_total": 197.52749744099992,
+        "seconds_median": 8.063111171500054,
+        "truncated_calls": 0,
+        "chars_saved": 0
+      },
+      "by_mode": {
+        "react": {
+          "episodes": 8,
+          "success": 4,
+          "success_rate": 0.5,
+          "input_tokens_total": 25839,
+          "output_tokens_total": 1298,
+          "input_tokens_median": 3039.5,
+          "output_tokens_median": 119.0,
+          "seconds_total": 64.25678113199956,
+          "seconds_median": 5.995372689000078,
+          "truncated_calls": 0,
+          "chars_saved": 0
+        },
+        "plan_then_execute": {
+          "episodes": 8,
+          "success": 4,
+          "success_rate": 0.5,
+          "input_tokens_total": 49573,
+          "output_tokens_total": 1997,
+          "input_tokens_median": 6167.0,
+          "output_tokens_median": 254.0,
+          "seconds_total": 133.27071630900036,
+          "seconds_median": 15.851891332000037,
+          "truncated_calls": 0,
+          "chars_saved": 0
+        }
+      },
+      "cache": {
+        "queries_tokens": 75412,
+        "hits_tokens": 35056,
+        "hit_rate": 0.4648597040258845
+      }
+    }
+  }
+}

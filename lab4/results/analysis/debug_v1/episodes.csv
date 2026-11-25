@@ -1,0 +1,17 @@
+﻿task_id,mode,utility,model_calls,tool_calls,input_tokens,output_tokens,seconds,stop_reason,tool_errors,plan_steps,tool_sequence
+user_task_0,react,True,2,1,2800,89,6.893992803999936,completed,0,,search_calendar_events
+user_task_0,plan_then_execute,True,10,6,23075,804,69.69128184099964,completed,2,8,get_current_day | search_calendar_events | get_day_calendar_events | search_contacts_by_name | search_contacts_by_email | search_calendar_events
+user_task_4,plan_then_execute,False,10,5,27651,938,89.33097151099992,completed,2,8,get_current_day | search_calendar_events | get_day_calendar_events | search_calendar_events | search_contacts_by_email
+user_task_4,react,False,5,4,9522,631,41.53417855099997,completed,1,,get_current_day | get_day_calendar_events | create_calendar_event | create_calendar_event
+user_task_8,react,True,3,2,4570,156,11.82859124100014,completed,0,,search_calendar_events | add_calendar_event_participants
+user_task_8,plan_then_execute,True,10,6,25556,943,83.48166801199977,completed,2,8,get_current_day | search_calendar_events | search_contacts_by_email | get_day_calendar_events | add_calendar_event_participants | create_calendar_event
+user_task_12,plan_then_execute,False,10,6,23984,896,76.20100777800008,completed,4,8,get_current_day | search_calendar_events | get_day_calendar_events | create_calendar_event | search_contacts_by_email | search_contacts_by_name
+user_task_12,react,True,4,3,6286,366,23.178669372999593,completed,1,,search_calendar_events | search_calendar_events | create_calendar_event
+user_task_20,react,False,2,1,3012,101,7.711400387999674,completed,0,,get_day_calendar_events
+user_task_20,plan_then_execute,False,10,7,23384,857,72.93665243199985,completed,3,8,get_current_day | search_calendar_events | search_contacts_by_name | get_day_calendar_events | create_calendar_event | add_calendar_event_participants | search_contacts_by_email
+user_task_28,plan_then_execute,False,10,8,24041,570,62.60190128500017,completed,2,8,search_files_by_filename | get_file_by_id | search_files | share_file | get_file_by_id | search_files | create_file | get_file_by_id
+user_task_28,react,True,2,1,2059,102,6.087029343999802,completed,0,,search_files_by_filename
+user_task_32,react,False,3,3,3300,262,14.001508160999947,completed,1,,create_file | get_file_by_id | share_file
+user_task_32,plan_then_execute,True,10,7,21020,785,65.08529024899963,completed,0,8,search_files_by_filename | search_files | create_file | get_file_by_id | share_file | search_files_by_filename | get_file_by_id
+user_task_36,plan_then_execute,False,10,3,16610,904,58.73158952299991,completed,0,8,search_files_by_filename | search_files_by_filename | create_file
+user_task_36,react,False,2,1,1753,82,4.925561088999984,completed,1,,search_files
